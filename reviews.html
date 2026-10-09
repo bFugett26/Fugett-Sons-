@@ -22,10 +22,71 @@
       </nav>
     </header>
 
-    <main>
-      <section class="hero card">
-        <h1>Reviews</h1>
-        <p>Customer reviews will be posted here as they are collected.</p>
+    <main class="reviews-page">
+      <section class="hero reviews-intro">
+        <p class="section-kicker">Words from the people we serve</p>
+        <h1>Good work<br /><em>speaks for itself.</em></h1>
+        <p>Real projects, real homes, and a lot of care in the details.</p>
+      </section>
+
+      <section class="review-grid" aria-label="Customer reviews">
+        <article class="review-card review-card-featured">
+          <div class="review-top"><span class="review-mark">“</span><span class="review-number">01</span></div>
+          <p class="reviewer">Allison Szymanski</p>
+          <blockquote>Dalton and his crew did an amazing job at our new home in Moorestown. We had 50+ old wallpaper, cracks in the drywall, old wood wall covering and so many other problems that needed more than the average painter. Dalton delivered on his promise to make our walls look brand new. He even did some carpentry repairs and painted all of our kitchen cabinets. Great communication and handled our feedback professionally. Highly recommend!</blockquote>
+        </article>
+
+        <article class="review-card review-card-teal">
+          <div class="review-top"><span class="review-mark">“</span><span class="review-number">02</span></div>
+          <p class="reviewer">Cindy Kraenzlin Curtis</p>
+          <blockquote>Dalton and his partner have been working at my daughter’s home non-stop for the past month. Wallpaper removal, skim coat on all walls, looks like a new sheet rock was hung, painting. His finish work is impeccable.</blockquote>
+        </article>
+
+        <article class="review-card review-card-rust">
+          <div class="review-top"><span class="review-mark">“</span><span class="review-number">03</span></div>
+          <p class="reviewer">Jessica Sophia</p>
+          <blockquote>I’ve had popcorn ceiling for 30 years and I could never find anyone to remove it! Dalton came into Home Depot where I work in the paint dept and said he just removed a popcorn ceiling! I never expected my living room ceiling to look normal again. It’s absolutely beautiful and on top of that, the paint job that he did is excellent! I highly recommend Dalton, he is a perfectionist, reasonably priced and was respectful!</blockquote>
+        </article>
+
+        <article class="review-card review-card-charcoal">
+          <div class="review-top"><span class="review-mark">“</span><span class="review-number">04</span></div>
+          <p class="reviewer">Neil Brooks</p>
+          <blockquote>Excellent painter and very thorough, I would highly recommend.</blockquote>
+        </article>
+
+        <article class="review-card review-card-light">
+          <div class="review-top"><span class="review-mark">“</span><span class="review-number">05</span></div>
+          <p class="reviewer">Ashley Connor Markley</p>
+          <blockquote>Fugett &amp; Son Painting and Drywall did a great job! Dalton was very professional, replied quickly, and got the entire job done swiftly. Dalton was able to bring to life exactly what we wanted, a new and updated look. The job was completed at a reasonable price!</blockquote>
+        </article>
+
+        <article class="review-card review-card-blue">
+          <div class="review-top"><span class="review-mark">“</span><span class="review-number">06</span></div>
+          <p class="reviewer">Bianca Vogel</p>
+          <blockquote>This dining room was a disaster (three different shades of a yellowish white), once my landlord gave me the thumbs up to paint I hired Dalton. He started two days after he gave me an estimate. He came over (on time) with a swatch book and I picked the color that spoke to me most. They took their time prepping the room. I’ve never realized how much prep work goes into painting. They smoothed out the walls, fixed minor holes and even fixed something I didn’t even ask them to simply because they thought it would look better. The professionalism was 100% at all times. I didn’t have to do a thing.</blockquote>
+          <blockquote>We are doing the living room next and I even got estimates for a few other projects! I am so beyond excited! If you don’t hire this crew you’re insane! Quality work for a great price.</blockquote>
+        </article>
+      </section>
+
+      <section class="review-submit" aria-labelledby="review-submit-title">
+        <div class="review-submit-copy">
+          <p class="section-kicker">Your experience matters</p>
+          <h2 id="review-submit-title">Tell us how we did.</h2>
+          <p>We would love to hear what stood out about your project and your experience with Fugett &amp; Sons.</p>
+        </div>
+        <form action="mailto:fugettandson@gmail.com" method="post" enctype="text/plain">
+          <label for="reviewerName">Your name</label>
+          <input id="reviewerName" name="Name" required />
+          <label for="reviewText">Your review</label>
+          <textarea id="reviewText" name="Review" required placeholder="Share a few words about your experience."></textarea>
+          <button class="btn" type="submit">Submit review <span aria-hidden="true">↗</span></button>
+        </form>
+      </section>
+
+      <section class="reviews-cta">
+        <p class="section-kicker">Have a project of your own?</p>
+        <h2>Let’s make something you’ll want to talk about.</h2>
+        <a class="btn" href="estimate.html">Request an estimate <span aria-hidden="true">↗</span></a>
       </section>
     </main>
 
